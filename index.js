@@ -134,17 +134,19 @@ const getRoleQuestions = () => {
 
 function renderManager(manager) {
   const html =`
-    <div class="card mb-4" style="width: 18rem;">
-      <div class="card-body">
-        <div class="card-header">
-          <h2>${manager.getName()}</h2>
-          <h3>${manager.getRole()}</h3>
+        <div class="col-md-4">
+          <div class="card mb-4" style="width: 18rem;">
+            <div class="card-body">
+              <div class="card-header">
+                <h2>${manager.getName()}</h2>
+                <h3>${manager.getRole()}</h3>
+              </div>
+              <p>Employee ID: ${manager.getId()}</p>
+              <p>Employee email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
+              <p>Manager office: ${manager.getOfficeNumber()}</p>
+            </div>
+          </div>
         </div>
-        <p>Employee ID: ${manager.getId()}</p>
-        <p>Employee email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
-        <p>Manager office: ${manager.getOfficeNumber()}</p>
-      </div>
-    </div>
     `;
     fs.appendFile(path.join(__dirname, './src/index.html'), html, function(err) {
       if (err) {
@@ -155,17 +157,19 @@ function renderManager(manager) {
 
 function renderEngineer(data) {
   const html =`
-    <div class="card mb-4" style="width: 18rem;">
-      <div class="card-body">
-        <div class="card-header">
-          <h2>${data.getName()}</h2>
-          <h3>${data.getRole()}</h3>
+      <div class="col-md-4">
+        <div class="card md-4" style="width: 18rem;">
+          <div class="card-body">
+            <div class="card-header">
+              <h2>${data.getName()}</h2>
+              <h3>${data.getRole()}</h3>
+            </div>
+            <p>Employee ID: ${data.getId()}</p>
+            <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
+            <p>Engineer GitHub: ${data.getGitHub()}</p>
+          </div>
         </div>
-        <p>Employee ID: ${data.getId()}</p>
-        <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-        <p>Engineer GitHub: ${data.getGitHub()}</p>
       </div>
-    </div>
     `;
     fs.appendFile(path.join(__dirname, './src/index.html'), html, function(err) {
       if (err) {
@@ -176,17 +180,19 @@ function renderEngineer(data) {
 
 function renderIntern(data) {
   const html =`
-    <div class="card mb-4" style="width: 18rem;">
-      <div class="card-body">
-        <div class="card-header">
-          <h2>${data.getName()}</h2>
-          <h3>${data.getRole()}</h3>
+        <div class="col-md-4">
+          <div class="card md-4" style="width: 18rem;">
+            <div class="card-body">
+              <div class="card-header">
+                <h2>${data.getName()}</h2>
+                <h3>${data.getRole()}</h3>
+              </div>
+              <p>Employee ID: ${data.getId()}</p>
+              <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
+              <p>Intern School: ${data.getSchool()}</p>
+            </div>
+          </div>
         </div>
-        <p>Employee ID: ${data.getId()}</p>
-        <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-        <p>Intern School: ${data.getSchool()}</p>
-      </div>
-    </div>
     `;
     fs.appendFile(path.join(__dirname, './src/index.html'), html, function(err) {
       if (err) {
@@ -218,7 +224,7 @@ function renderHeader(){
       <a class="navbar-brand" href="#">MyTeam</a>
     </nav>
     <div class="container">
-      <div class="card-deck">`
+      <div class="row">`
 
 
   fs.writeFile(path.join(__dirname, './src/index.html'), html, function(err) {
