@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/eamahma/Team-Profile-Generator#readme",
   "dependencies": {
+    "await": "^0.2.6",
     "inquirer": "^8.1.2",
+    "inquirer-loop": "^0.3.0",
+    "inquirer-promise": "^1.0.0",
     "jest": "^27.0.6"
   }
 }
