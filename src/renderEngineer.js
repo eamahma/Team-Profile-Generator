@@ -12,12 +12,12 @@ function renderEngineer(data) {
               </div>
               <p>Employee ID: ${data.getId()}</p>
               <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-              <p>Engineer GitHub: ${data.getGitHub()}</p>
+              <p>Engineer GitHub: <a href="https://github.com/${data.getGitHub()}" target="_blank">${data.getGitHub()}</a></p>
             </div>
           </div>
         </div>
       `;
-      fs.appendFile(path.join(__dirname, './index.html'), html, function(err) {
+      fs.appendFile(path.join(__dirname, '../dist/index.html'), html, function(err) {
         if (err) {
             console.log(err);
         }

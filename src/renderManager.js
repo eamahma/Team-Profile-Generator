@@ -1,4 +1,3 @@
-//const {path, fs} = require('./renderHeader');
 const path = require('path');
 const fs = require('fs');
 
@@ -18,7 +17,7 @@ const html =`
         </div>
         </div>
     `;
-    fs.appendFile(path.join(__dirname, './index.html'), html, function(err) {
+    fs.appendFile(path.join(__dirname, '../dist/index.html'), html, function(err) {
     if (err) {
         console.log(err);
     }

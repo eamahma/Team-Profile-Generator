@@ -8,7 +8,7 @@ function renderFooter(){
     </body>
     </html>`
 
-    fs.appendFile(path.join(__dirname, './index.html'), html, function(err) {
+    fs.appendFile(path.join(__dirname, '../dist/index.html'), html, function(err) {
         if (err) {
             console.log(err);
         }

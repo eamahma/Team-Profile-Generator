@@ -3,7 +3,7 @@ const fs = require('fs');
 
 
 function renderHeader(){
-    const html = `
+    const html =`
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -17,6 +17,7 @@ function renderHeader(){
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
       <title>Team</title>
     </head>
     <body>
@@ -27,7 +28,7 @@ function renderHeader(){
         <div class="row">`
   
   
-    fs.writeFile(path.join(__dirname, './index.html'), html, function(err) {
+    fs.writeFile(path.join(__dirname, '../dist/index.html'), html, function(err) {
       if (err) {
           console.log(err);
       }
