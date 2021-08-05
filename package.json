@@ -6,8 +6,16 @@
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {
+    "await": "^0.2.6",
+    "inquirer": "^8.1.2",
+    "inquirer-loop": "^0.3.0",
+    "inquirer-promise": "^1.0.0",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,12 +26,5 @@
   "bugs": {
     "url": "https://github.com/eamahma/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/eamahma/Team-Profile-Generator#readme",
-  "dependencies": {
-    "await": "^0.2.6",
-    "inquirer": "^8.1.2",
-    "inquirer-loop": "^0.3.0",
-    "inquirer-promise": "^1.0.0",
-    "jest": "^27.0.6"
-  }
+  "homepage": "https://github.com/eamahma/Team-Profile-Generator#readme"
 }
