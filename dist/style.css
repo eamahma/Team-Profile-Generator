@@ -1,12 +1,7 @@
-h1
-{
-    /* position: float;
-    width: 100%;
-    left: 0;
-    top: 0; */
+h1 {
     text-align: center;
 }
 
-.navbar{
+.navbar {
     margin-bottom: 2em;
 }

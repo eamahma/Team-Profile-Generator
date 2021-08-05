@@ -9,10 +9,10 @@ function renderIntern(data) {
               <h2>${data.getName()}</h2>
               <h3><i class="fas fa-user-graduate"></i>  ${data.getRole()}</h3>
             </div>
-            <div class="card-body">
-              <p>Employee ID: ${data.getId()}</p>
-              <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-              <p>Intern School: ${data.getSchool()}</p>
+            <div class="card-body bg-light">
+              <p class="border border-secondary bg-white p-1">ID: ${data.getId()}</p>
+              <p class="border border-secondary bg-white p-1">Email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
+              <p class="border border-secondary bg-white p-1">School: ${data.getSchool()}</p>
             </div>
           </div>
         </div>

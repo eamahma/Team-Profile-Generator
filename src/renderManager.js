@@ -7,12 +7,12 @@ const html =`
         <div class="card mb-4" style="width: 18rem;">
             <div class="card-header bg-primary text-white">
                 <h2>${manager.getName()}</h2>
-                <h3><i class="fas fa-mug-hot"></i>cc${manager.getRole()}</h3>
+                <h3><i class="fas fa-mug-hot"></i>  ${manager.getRole()}</h3>
             </div>
-            <div class="card-body">
-                <p>Employee ID: ${manager.getId()}</p>
-                <p>Employee email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
-                <p>Manager office: ${manager.getOfficeNumber()}</p>
+            <div class="card-body bg-light">
+                <p class="border border-secondary bg-white p-1">ID: ${manager.getId()}</p>
+                <p class="border border-secondary bg-white p-1">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
+                <p class="border border-secondary bg-white p-1">Office: ${manager.getOfficeNumber()}</p>
             </div>
         </div>
         </div>

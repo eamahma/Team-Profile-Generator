@@ -9,10 +9,10 @@ function renderEngineer(data) {
               <h2>${data.getName()}</h2>
                <h3><i class="fas fa-glasses"></i>  ${data.getRole()}</h3>
             </div>
-            <div class="card-body">
-              <p>Employee ID: ${data.getId()}</p>
-              <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-              <p>Engineer GitHub: <a href="https://github.com/${data.getGitHub()}" target="_blank">${data.getGitHub()}</a></p>
+            <div class="card-body bg-light">
+              <p class="border border-secondary bg-white p-1">ID: ${data.getId()}</p>
+              <p class="border border-secondary bg-white p-1">Email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
+              <p class="border border-secondary bg-white p-1">GitHub: <a href="https://github.com/${data.getGitHub()}" target="_blank">${data.getGitHub()}</a></p>
             </div>
           </div>
         </div>
