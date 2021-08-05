@@ -5,11 +5,11 @@ function renderEngineer(data) {
     const html =`
         <div class="col-md-4">
           <div class="card md-4" style="width: 18rem;">
+            <div class="card-header bg-primary text-white">
+              <h2>${data.getName()}</h2>
+               <h3><i class="fas fa-glasses"></i>  ${data.getRole()}</h3>
+            </div>
             <div class="card-body">
-              <div class="card-header">
-                <h2>${data.getName()}</h2>
-                <h3>${data.getRole()}</h3>
-              </div>
               <p>Employee ID: ${data.getId()}</p>
               <p>Employee email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
               <p>Engineer GitHub: <a href="https://github.com/${data.getGitHub()}" target="_blank">${data.getGitHub()}</a></p>

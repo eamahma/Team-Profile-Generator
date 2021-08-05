@@ -21,8 +21,8 @@ function renderHeader(){
       <title>Team</title>
     </head>
     <body>
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">MyTeam</a>
+      <nav class="navbar navbar-light bg-danger">
+        <a class="navbar-brand   text-white" href="#"><h1>My Team</h1></a>
       </nav>
       <div class="container">
         <div class="row">`

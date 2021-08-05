@@ -5,14 +5,14 @@ function renderManager(manager) {
 const html =`
         <div class="col-md-4">
         <div class="card mb-4" style="width: 18rem;">
-            <div class="card-body">
-            <div class="card-header">
+            <div class="card-header bg-primary text-white">
                 <h2>${manager.getName()}</h2>
-                <h3>${manager.getRole()}</h3>
+                <h3><i class="fas fa-mug-hot"></i>cc${manager.getRole()}</h3>
             </div>
-            <p>Employee ID: ${manager.getId()}</p>
-            <p>Employee email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
-            <p>Manager office: ${manager.getOfficeNumber()}</p>
+            <div class="card-body">
+                <p>Employee ID: ${manager.getId()}</p>
+                <p>Employee email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
+                <p>Manager office: ${manager.getOfficeNumber()}</p>
             </div>
         </div>
         </div>
