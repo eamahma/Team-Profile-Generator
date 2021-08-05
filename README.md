@@ -46,7 +46,7 @@ The styling is done using Bootstrap, Fontawsome, and Google fonts
 
 The video in the following link shows using node.js command line and created of the generated HTML’s appearance and functionality; at the end all classes have been tests using Jest:
 
-![Video showing exectuting the application, generated html, and testing the application.](https://drive.google.com/file/d/1rAhqDloZRie0RUcDLfai3fonp37mIRDt/view)
+[Video showing exectuting the application, generated html, and testing the application.](https://drive.google.com/file/d/17sjSDU8IuMsP2ENWJZ5bmKeB4fxNMxt5/view)
 
 The styling is done using Bootstrap, Fontawsome, and Google fonts
 
