@@ -5,7 +5,7 @@ function renderIntern(data) {
     const html =`
         <div class="col-md-4">
           <div class="card md-4" style="width: 18rem;">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header text-white">
               <h2>${data.getName()}</h2>
               <h3><i class="fas fa-user-graduate"></i>  ${data.getRole()}</h3>
             </div>

@@ -36,14 +36,16 @@ const createManager = function(){
     ])
     .then(answers => {
       const manager = new Manager(answers.id, answers.name, answers.email, answers.room);
+      // Push new Employee object into array
       teamMembers.push(manager);
-      // console.log(teamMembers);
-      // console.log(manager.getName());
+      // render Manager card in html file
       renderManager(manager);
+      // function to check if adding another employee
       getRoleQuestions();
     })
 };
 
+// Create new Engineer object and get user inputs for new object
 const createEngineer = function(){
     inquirer.prompt([
         {
@@ -69,13 +71,16 @@ const createEngineer = function(){
     ])
     .then(answers => {
         const engineer = new Engineer(answers.id, answers.name, answers.email, answers.github);
+        // Push new Employee object into array
         teamMembers.push(engineer);
-    //    console.log(teamMembers);
+        // render Engineer card in html file
         renderEngineer(engineer);
+        // function to check if adding another employee
         getRoleQuestions();
     })
 };
 
+// Create new Intern object and get user inputs for new object
 const createIntern = function(){
     inquirer.prompt([
         {
@@ -101,13 +106,16 @@ const createIntern = function(){
     ])
     .then(answers => {
         const intern = new Intern(answers.id, answers.name, answers.email, answers.school);
+        // Push new Intern object into array
         teamMembers.push(intern);
-        // console.log(teamMembers);
+        // render Intern card in html file
         renderIntern(intern);
+        // function to check if adding another employee
         getRoleQuestions();
     })
 };
 
+// Function to give selection to add Engineer, Intern, or end the application
 const getRoleQuestions = function (){
     inquirer.prompt([
       {
@@ -118,6 +126,7 @@ const getRoleQuestions = function (){
       }    
     ])
     .then(answers => {
+      // Based on above selection different functions run
       switch (answers.role){
         case "Engineer":
           createEngineer();
@@ -126,6 +135,7 @@ const getRoleQuestions = function (){
           createIntern();
           break;
         default:
+          // if no more employee added thic function render bottom of html file
           renderFooter();
       }
     })

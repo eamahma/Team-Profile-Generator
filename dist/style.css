@@ -2,6 +2,11 @@ h1 {
     text-align: center;
 }
 
-.navbar {
+.nav {
+    background-color: darkred;
     margin-bottom: 2em;
+}
+
+.card-header {
+    background-color: blue;
 }
